@@ -294,21 +294,19 @@ function get_post_columns($count, $mode = 1) {
 
     return $columns;
 }
-//Add fontawesome
+
+// Add fontawesome
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
-
-
 function theme_enqueue_styles() {
  wp_enqueue_style( 'fontawesome-style', get_stylesheet_directory_uri() .'/font-awesome/css-font-awesome/fontawesome.min.css' );
 }
 
-// edit woocommerce page
-
-function remove(){
-   add_action('woocommerce_before_main_content','woocommerce_breadcrumb',20);
-    remove_action('woocommerce_before_shop_loop','woocommerce_catalog_ordering',30);
+// Edit woocommerce page
+function remove() {
+  add_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+  remove_action('woocommerce_before_shop_loop','woocommerce_catalog_ordering',30);
 }
-add_action('init','remove',20);
+add_action('init', 'remove', 20);
 
 function be_excerpt_more( $more ) {
     return ' <a href="' . get_permalink() . '">Read More</a>';
