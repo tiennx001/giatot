@@ -16,7 +16,9 @@ $hide_icons           = ((isset($apmega_settings['hide_icons']))?$apmega_setting
 $icon_width           = ((isset($apmega_settings['icon_width']))?$apmega_settings['icon_width']:'');
 
 $enable_custom_css    = ((isset($apmega_settings['enable_custom_css']) && $apmega_settings['enable_custom_css'] == 1)?'1':'0');
+$enable_custom_js    = ((isset($apmega_settings['enable_custom_js']) && $apmega_settings['enable_custom_js'] == 1)?'1':'0');
 $custom_css           = ((isset($apmega_settings['custom_css']))?$apmega_settings['custom_css']:'');
+$custom_js           = ((isset($apmega_settings['custom_js']))?$apmega_settings['custom_js']:'');
 
 $theme_object = new AP_Theme_Settings();
 $custom_theme = $theme_object->get_custom_theme_data('');

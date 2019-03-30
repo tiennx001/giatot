@@ -3,8 +3,8 @@
 Contributors: yithemes
 Tags: zoom, magnifier, slider, carousel, woocommerce
 Requires at least: 4.0
-Tested up to: 4.9.4
-Stable tag: 1.3.4
+Tested up to: 5.1.0
+Stable tag: 1.3.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Documentation: https://docs.yithemes.com/yith-woocommerce-zoom-magnifier/
@@ -51,6 +51,29 @@ YITH WooCommerce Zoom Magnifier will add a new tab called "Zoom Magnifier" in "Y
 6. Choose how many items the slider should show, the image thumbnails will fit the available width.
 
 == Changelog ==
+
+= Version 1.3.8 - Released: Feb 28, 2018 =
+
+* Update: plugin framework
+* Fix: Undefined variable "block_args"
+
+= Version 1.3.7 - Released: Dec 24, 2018 =
+
+* Update: plugin framework
+* Fix: Undefined variable "block_args"
+
+= Version 1.3.6 - Released: Dec 12, 2018 =
+
+* New: Support to WordPress 5.0
+* Update: plugin framework version 3.1.10
+
+= Version 1.3.5 - Released: Oct 23, 2018 =
+
+* New: Support to WooCommerce 3.5.0
+* Update: plugin framework
+* Update: plugin description
+* Update: plugin links
+* Dev: extra class if featured audio plugin is enabled
 
 = Version 1.3.4 - Released: June 26, 2018 =
 

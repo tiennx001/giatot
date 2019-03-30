@@ -2,8 +2,8 @@
 /**
  * Cấu hình cơ bản cho WordPress
  *
- * Trong quá trình cài đặt, file "wp-config.php" sẽ được tạo dựa trên nội dung 
- * mẫu của file này. Bạn không bắt buộc phải sử dụng giao diện web để cài đặt, 
+ * Trong quá trình cài đặt, file "wp-config.php" sẽ được tạo dựa trên nội dung
+ * mẫu của file này. Bạn không bắt buộc phải sử dụng giao diện web để cài đặt,
  * chỉ cần lưu file này lại với tên "wp-config.php" và điền các thông tin cần thiết.
  *
  * File này chứa các thiết lập sau:
@@ -65,7 +65,7 @@ define('NONCE_SALT',       'khóa không trùng nhau');
  * Đặt tiền tố cho bảng giúp bạn có thể cài nhiều site WordPress vào cùng một database.
  * Chỉ sử dụng số, ký tự và dấu gạch dưới!
  */
-$table_prefix  = 'wp_';
+$table_prefix = 'wp_';
 
 /**
  * Dành cho developer: Chế độ debug.

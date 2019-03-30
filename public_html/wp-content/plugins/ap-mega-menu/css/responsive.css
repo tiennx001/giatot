@@ -35,6 +35,7 @@ responsive for horizontal mega menu
 		border-bottom: 1px solid #ccc;
 		text-align: left;
 		position: relative;
+		display: block;
 	}
         .wpmm_megamenu ul.wpmm-mega-wrapper li.wpmega-hide-on-desktop{
             display:block;
@@ -278,6 +279,9 @@ responsive for horizontal mega menu
     }
     .wp-megamenu-main-wrapper.wpmm-orientation-horizontal ul.wpmm-mega-wrapper {
     	overflow: hidden;
+    	padding: 0;
+	    margin: 0;
+	    border: 0;
     }
     ul.wpmm-mega-wrapper li.wpmega-menu-flyout.wpmega-flyout-horizontal-right div ul li.wpmm-submenu-align-left div{
         right:0;

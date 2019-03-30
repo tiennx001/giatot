@@ -172,14 +172,14 @@ jQuery(function ($) {
     }
   }
   
-  if($('#wpmm_custom_css').length > 0){
+/*  if($('#wpmm_custom_css').length > 0){
   var editor = CodeMirror.fromTextArea(document.getElementById("wpmm_custom_css"), {
                        lineNumbers: true,
                         autofocus: true,
                        matchBrackets: true,
                        styleActiveLine: true
                   });
- }
+ }*/
 
   $('.tabs-left li a').on('click',function(){
 
@@ -191,13 +191,38 @@ jQuery(function ($) {
      $('#apmm-add-button').show();
       $('#restore_settings_btn').show();
    }
-     if(bindtab == '#custom_css'){
+   /* if(bindtab == '#custom_css'){
         setTimeout(function() {
            editor.refresh();
           }, 100);
+     }*/
+    if(bindtab == '#custom_css'){
+        setTimeout(function() {
+           // editor.refresh();
+             codeMirrorDisplay();
+          }, 100);
+   
+     //codeMirrorDisplay($('.wpmm_custom_js'));
      }
 
   });
+
+    function codeMirrorDisplay() {
+       var $codeMirrorEditors = $('.wpmm_custom');
+       $codeMirrorEditors.each(function(i, el) {
+           var $active_element = $(el);
+           if ($active_element.data('cm')) {
+               $active_element.data('cm').doc.cm.toTextArea();
+           }
+           var codeMirrorEditor = CodeMirror.fromTextArea(el, {
+               lineNumbers: true,
+               lineWrapping: true
+                // autofocus: true
+               // theme: 'eclipse'
+           });
+           $active_element.data('cm', codeMirrorEditor);
+       });
+   }
 
     $(document).on("click",".wpmm_image_url",function(e) {
            e.preventDefault();

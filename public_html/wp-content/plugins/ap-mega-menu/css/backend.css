@@ -163,7 +163,7 @@ label.ap-mega_multiple_field {
     
     font-size: 0.9em;
     margin-bottom: 10px;
-    margin-right: 10px;
+    /*margin-right: 10px;*/
 }
 .label_field > span {
     display: none;
@@ -534,7 +534,7 @@ select.select_fields_wpmm {
 }
 .widget_left_section {
     float: left;
-    width: 20%;
+    width: 19%;
     padding: 0 20px;
 }
 .wpmm_widget_iframe .widget_left_section ul li {
@@ -564,7 +564,7 @@ select.select_fields_wpmm {
 .widget_right_section {
     float: left;
     border: 1px solid #00c0ef;
-    width: 80%;
+    width: 76%;
 }
 .btn_close_me {
     border-bottom: 3px solid #f7ae37;
@@ -587,7 +587,7 @@ select.select_fields_wpmm {
     margin-right: 7px;
 }
 .wpmm_widgte_middle_content {
-    margin-left: 4px;
+    /*margin-left: 4px;*/
 }
 .wpmm_tabss {
     cursor: pointer;

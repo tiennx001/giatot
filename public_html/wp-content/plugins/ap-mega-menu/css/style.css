@@ -1,5 +1,5 @@
 /*
-* Style Free Version 2.0.3
+* Style Free Version 2.0.5
 */
 .clear {
 	clear: both;
@@ -147,7 +147,7 @@ css for nav list-menu for horizontal menu
 .wp-megamenu-main-wrapper.wpmm-orientation-horizontal ul.wpmm-mega-wrapper > li.current-menu-item a,
 .wp-megamenu-main-wrapper.wpmm-orientation-vertical ul.wpmm-mega-wrapper > li.current-menu-item a {
 	font-weight: 400;
-	color: #000;
+	/*color: #000;*/
 	text-align: left;
 	text-transform: none;
 }
@@ -202,8 +202,8 @@ generic css for ul > ul
     margin-left: 0 !important;
     position: static;
     z-index: 999;
-    visibility: visible;
-    opacity: 1;
+/*    visibility: visible;
+    opacity: 1;*/
     white-space: normal;
     padding: 0;
 }
@@ -216,6 +216,7 @@ generic css for ul > ul
 .wpmm_megamenu .wp-megamenu-main-wrapper ul ul.wp-mega-sub-menu li {
 	border: none;
     background: none;
+    display: inline-block;
 }
 /*
 =============

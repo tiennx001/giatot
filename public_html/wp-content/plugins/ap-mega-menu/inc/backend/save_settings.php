@@ -27,7 +27,9 @@ $apmega_settings['close_menu_icon']             = (isset($_POST['close_menu_icon
 $apmega_settings['open_menu_icon']              = (isset($_POST['open_menu_icon']) && $_POST['open_menu_icon'] != '')?sanitize_text_field($_POST['open_menu_icon']):'dashicons dashicons-no';
 
 $apmega_settings['enable_custom_css']              = (isset($_POST['enable_custom_css']) && $_POST['enable_custom_css'] == '1')?'1':'0';
+$apmega_settings['enable_custom_js']              = (isset($_POST['enable_custom_js']) && $_POST['enable_custom_js'] == '1')?'1':'0';
 $apmega_settings['custom_css']              = (isset($_POST['custom_css']) && $_POST['custom_css'] != '')?$_POST['custom_css']:'';
+$apmega_settings['custom_js']              = (isset($_POST['custom_js']) && $_POST['custom_js'] != '')?$_POST['custom_js']:'';
 
 update_option('apmega_settings', $apmega_settings);
 wp_redirect(admin_url('admin.php?page=ap-mega-menu&message=1'));

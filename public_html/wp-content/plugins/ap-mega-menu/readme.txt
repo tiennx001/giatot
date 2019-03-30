@@ -3,8 +3,8 @@ Contributors: Access Keys
 Tags: mega menu, responsive mega menu, horizontal menu,vertical menu, responsive, flyout menu , nav menu, wordpress mega menu , wp mega menu
 Donate link: http://accesspressthemes.com/donation/
 Requires at least: 3.8
-Tested up to: 4.9
-Stable tag: 2.0.4
+Tested up to: 5.0
+Stable tag: 2.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 ★ Important Note: This plugin is replacement of WP Mega Menu Plugin.
 
-[Homepage](https://accesspressthemes.com/) | [Documentation](https://accesspressthemes.com/documentation/ap-mega-menu/) | [Support](https://accesspressthemes.com/support) | [Demo](http://demo.accesspressthemes.com/wordpress-plugins/ap-mega-menu/) | [Videos Tutorials](https://www.youtube.com/playlist?list=PLdSqn2S_qFxHLWS_ZcuGGh1SyWGP_llug) | [Premium Version](https://codecanyon.net/item/wp-mega-menu-pro-responsive-mega-menu-plugin-for-wordpress/19190840?ref=AccessKeys)
+[Homepage](https://accesspressthemes.com/) | [Documentation](https://accesspressthemes.com/documentation/ap-mega-menu/) | [Support](https://accesspressthemes.com/support) | [Demo](http://demo.accesspressthemes.com/wordpress-plugins/ap-mega-menu/) | [Videos Tutorials](https://www.youtube.com/playlist?list=PLdSqn2S_qFxHLWS_ZcuGGh1SyWGP_llug) | [Premium Version](https://1.envato.market/c/1302794/275988/4415?u=https%3A%2F%2Fcodecanyon.net%2Fitem%2Fwp-mega-menu-pro-responsive-mega-menu-plugin-for-wordpress%2F19190840)
 
 <strong>AP Mega Menu</strong>
 Add powerful and great looking Mega Menu in your WordPress site with - AP Mega Menu
@@ -67,7 +67,7 @@ Install AP Mega Menu and give your readers a super comfort while reading!
 
 = Premium Features: =
 
-    ★ Mega Menu/ Flyout 14 Free Elegant Template Layouts/ Custom Design
+    ★ Mega Menu/ Flyout 14 Free Elegant Template/Skins Layouts/ Custom Design
        14 Free Available Skins/ Templates beautifully designed or custom design with multiple customization options.
 
     ★ Horizontal & Vertical Megamenu
@@ -170,7 +170,7 @@ Install AP Mega Menu and give your readers a super comfort while reading!
     ★ And many more...
     
 = Premium Upgrade =
-* For premium upgrade, please go [here](https://accesspressthemes.com/wordpress-plugins/wp-mega-menu-pro/)
+* For premium upgrade, please go [here](https://1.envato.market/c/1302794/275988/4415?u=https%3A%2F%2Fcodecanyon.net%2Fitem%2Fwp-mega-menu-pro-responsive-mega-menu-plugin-for-wordpress%2F19190840)
 
 Support
 Feel free to ask for support. Send us an email or use forum support on WordPress.org or in our website. 
@@ -224,6 +224,9 @@ AND IF THIS PLUGIN HAS IMPRESSED YOU, THEN YOU WOULD ENJOY OUR OTHER PROJECTS TO
 = What does this plugin do? =
 This plugin allows you to easily add widgets column wise on horizontal as well as vertical mega menu and flyout menu.
 
+= Is this plugin compatible with any WordPress Themes? =
+This plugin is compatible with any WordPress Theme which is coded with WordPress Coding Standard. But in some case in theme, since our plugin overrides default menu of theme, which might create conflict with theme CSS but it can be resolved with the help of Custom CSS.
+
 = Will it effect my site's speed? =
 No, It will not affect the loading of the site in anyways.
 
@@ -255,6 +258,15 @@ No, It will not affect the loading of the site in anyways.
 25. Frontend Vertical Menu Demo
 
 == Changelog ==
+= 2.0.6 =
+* Compatibility check with latest WordPress Version.
+* Added New feature as Custom JS in main plugin setting page's Custom CSS tab section.
+* Few backend and frontend CSS Refinement.
+
+= 2.0.5 =
+* Hover issue resolved on frontend.
+* Few frontend CSS Refinement.
+
 = 2.0.4 =
 * Added some promo content in the backend of the plugin.
 * Few backend CSS Refinement.

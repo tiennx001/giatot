@@ -3,7 +3,7 @@
   Plugin Name: AP Mega Menu
   Plugin URI:  https://accesspressthemes.com/wordpress-plugins/ap-mega-menu/
   Description: Horizontal & Vertical layout Mega menu | Responsive & User friendly | Widgetized, Drag & Drop | Built-in and custom layouts
-  Version:     2.0.4
+  Version:     2.0.6
   Author:      AccessPress Themes
   Author URI:  http://accesspressthemes.com
   License:     GPLv2 or later
@@ -11,7 +11,7 @@
   Domain Path: /languages
   Text Domain: ap-mega-menu
  */
-defined('APMM_VERSION') or define('APMM_VERSION', '2.0.4'); //plugin version
+defined('APMM_VERSION') or define('APMM_VERSION', '2.0.6'); //plugin version
 defined('APMM_TITLE') or define('APMM_TITLE', 'AP MEGA MENU'); //plugin version
 defined('APMM_TD') or define('APMM_TD', 'ap-mega-menu'); //plugin's text domain
 defined('APMM_CSS_PREFIX') or define('APMM_CSS_PREFIX', 'wpmega-'); //plugin's text domain
@@ -45,6 +45,7 @@ if (!class_exists('APMM_Class')) {
             add_action('widgets_init', array($this, 'wpmm_mega_register_widget'));
             add_shortcode('wpmegamenu', array($this, 'wpmm_print_menu_shortcode'));
             add_action('wp_head', array($this, 'prefix_add_header_styles'));
+            add_action('wp_footer', array($this, 'prefix_add_footer_custom_scripts'));
             add_filter('widget_text', 'do_shortcode');
             /* responsive toggle bar content display filter hook start */
             add_filter('wp_nav_menu', array($this, 'wpmm_mobiletoggle'), 10, 2); // display toggle bar on top of menu frontend
@@ -60,6 +61,24 @@ if (!class_exists('APMM_Class')) {
         }
 
         /*
+        * Load Custom Script in Footer
+        */
+        public function prefix_add_footer_custom_scripts(){
+            $options = get_option('apmega_settings');
+            $enable_custom_js = (isset($options['enable_custom_js']) && $options['enable_custom_js'] == 1)?'1':'0';
+            $custom_js = (isset($options['custom_js'])) ? $options['custom_js'] : '';
+            if($enable_custom_js == 1){
+              if($custom_js != ''){ ?>
+              <script type="text/javascript">
+              <?php echo $custom_js; ?>
+              </script>
+              <?php  
+              }
+            }
+
+        }
+
+        /*
          * Load Stylesheet on Header
          */
 
@@ -70,7 +89,7 @@ if (!class_exists('APMM_Class')) {
             $animation_delay = (isset($options['animation_delay'])) ? $options['animation_delay'] . 's' : '2s';
             $animation_duration = (isset($options['animation_duration'])) ? $options['animation_duration'] . 's' : '3s';
             $animation_iteration_count = (isset($options['animation_iteration_count'])) ? $options['animation_iteration_count'] : '1';
-            $enable_custom_css = (isset($options['enable_custom_css']) && $options['enable_custom_css'] == 1) ? '1' : '0';
+            $enable_custom_css = (isset($options['enable_custom_css']) && $options['enable_custom_css'] == 1)?'1':'0';
             $custom_css = (isset($options['custom_css'])) ? $options['custom_css'] : '';
             $icon_width = (isset($options['icon_width']) && $options['icon_width'] != '') ? $options['icon_width'] : '';
 

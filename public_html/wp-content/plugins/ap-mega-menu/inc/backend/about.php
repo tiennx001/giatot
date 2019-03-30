@@ -3,7 +3,6 @@
     <div class="apmm-header">
     <?php include_once('panel_head.php');?>
     </div>
-
 <div class="container wpmm-hot-to-use-container">
 <div class="col-sm-8">
            <div class="wpmm-panel-body">
@@ -32,7 +31,10 @@
                                 <br />
                                 <a href="https://accesspressthemes.com/documentation/ap-mega-menu/" target="_blank">https://accesspressthemes.com/documentation/ap-mega-menu/</a>
                             </p>
-                            <p>&nbsp;</p>
+                            <p><strong><?php _e('Premium Plugin Link can be found here:',APMM_TD);?></strong>
+                                <br />
+                                <a href="https://1.envato.market/c/1302794/275988/4415?u=https%3A%2F%2Fcodecanyon.net%2Fitem%2Fwp-mega-menu-pro-responsive-mega-menu-plugin-for-wordpress%2F19190840" target="_blank">Upgrade To Pro</a>
+                            </p>
                          <hr style="border: 1px solid #efefef;width: 95%;float: left;"/>
                             <h3>Themes Compatible with the Plugin :</h3> <p>&nbsp;</p>
                             <strong><?php echo APMM_TITLE;?></strong> works best with every WordPress theme. It's even more remarkable when used with popular themes like VMagazine and AccessPress Parallax.
@@ -120,7 +122,7 @@
 
                         <p><strong>Like us on facebook:</strong>
                             <br />
-                            <iframe style="border: none; overflow: hidden; width: 250px; height: 250px;" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FAccessPress-Themes%2F1396595907277967&amp;width=842&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=true&amp;appId=1411139805828592" width="240" height="150" frameborder="0" scrolling="no"></iframe>
+                            <iframe style="border: none; overflow: hidden; width: 800px; height: 182px;" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FAccessPress-Themes%2F1396595907277967&amp;width=842&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=true&amp;appId=1411139805828592" width="240" height="150" frameborder="0" scrolling="no"></iframe>
                         </p>
 
                         <ul class="wpmm-about wpmm-unstyled wpmm-inlinelist">
